@@ -9,7 +9,7 @@ public class AccountServiceClientFallback implements AccountServiceClient {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Override
-	public String getAccount(String accountName) {
+	public String getAccount(Long id) {
 		logger.warn("Fallback() called.");
 		return null;
 	}

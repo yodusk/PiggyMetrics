@@ -12,6 +12,8 @@ import java.util.Map;
 public class Recipient {
 
 	@Id
+	private Long accountId;
+
 	private String accountName;
 
 	@NotNull
@@ -20,6 +22,11 @@ public class Recipient {
 
 	@Valid
 	private Map<NotificationType, NotificationSettings> scheduledNotifications;
+
+
+	public Long getAccountId() {
+		return accountId;
+	}
 
 	public String getAccountName() {
 		return accountName;
